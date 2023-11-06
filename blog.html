@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <!-- Google tag (gtag.js) -->  
+  <meta charset="utf-8" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body :not(.navbar) {
+        box-sizing: border-box;
+    
+    }
+    
+    /* Add a gray background color with some padding */
+    body {
+      font-family: Montserrat;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+    
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+    }
+    
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {   
+      float: left;
+      width: 75%;
+    }
+    
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+    
+    /* Fake image */
+    .fakeimg {
+      background-color: #ffffff;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    /* Add a card effect for articles */
+    .card {
+       background-color: white;
+       padding: 20px;
+       margin-top: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    </style>
+
+  <title>Magnificent Macramé</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZ5NY245EH"></script>
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image" href="Favicon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f5d926644b.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+ <script>
+              if (window.screen.width <950){
+      alert("To view a better version of this site, a desktop or a computer works best. If you would like to view a better version of the page, feel free switch devices.")
+    }
+        </script>
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark" style = "padding-bottom: 0;">
+        <a class="navbar-brand title" href="">Magnificent Macramé</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="photos.html">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html"  style = "color:white;">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+      </section>
+      
+      <div class="row" style = "padding: 5%; background-color: #9d88da; padding-top:3%;">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Week 1</h2>
+            <h5>Septemeber 13th, 2023</h5>
+            <div class="fakeimg" style="height:200px;"><img src="Week-1-blog.gif"style = "width:35%; padding-right:5%;" alt=""><img src = "Macrame.png" style= "width:25%; padding-right:5%"> <img src = "Red Spiral Coaster.jpg" style= "width:15%;"></div>
+            <br>
+            <br>
+
+            <p>Hello everyone, and welcome to my Genius Hour blog! In this blog, I will be giving weekly updates on my Genius Hour and talk about how I work through the process of the complex and intricate art of Macramé. As a beginner to this art form, Macramé has always intrigued me because it is a textile-based art that can help you weave some pretty cool things. From wall hangings all the way to coasters, the possibilities are limitless. The first week of my project was used in ordering all of the materials and supplies, choosing a color theme for my site, designing my logo, figuring out what coding platform I will use for my website, and making my first ever coaster creation.</p>
+          </div>
+          <div class="card">
+            <h2> Week 2</h2>
+            <h5>September 13th, 2023 </h5>
+            <div class="fakeimg" style="height:200px;"><img src="Larks-Head.png"style = "width:25%; padding-right:5%;" alt=""><img src = "Cow-Hitch.png" style= "width:25%; padding-right:5%"> <img src = "Square-Knot.png" style= "width:15%;  padding-right:5%"> <img src = "Double-Half-Hitch-Knot.png" style= "width:25%;"></div>
+            <br>
+            <p>This week was focuesd on making another creation that was a little more difficult compared to making a coaster. This whole week was dedicated to making a simple Macramé wall hanging. As a beginner to this beautiful art form, I was able to learn three different kinds of knots in this whole process; the lark's head/cow hitch knot, the square knot (something that is very important in a lot of Macramé project), and the double half hitch knot. The lark's head/cow hitch knot was used to hold all of the strings in place and the square knots and double half hitch knots were used to make the patterns and designs. This process was very difficult for me at first, but I eventually got the hang of it. I can most definetely say that within the first two weeks, I drastically improved. </p>
+          </div>
+          <div class="card">
+            <h2> Week 3</h2>
+            <h5>September 20th, 2023</h5>
+            <div class="fakeimg" style="height:200px;"><img src="Week-3-img.gif"style = "width:35%; padding-right:5%;" alt=""><img src = "Rectangular Coaster.jpg" style= "width:18%; padding-right:5%"> <img src = "Multicolor Spiral Coaster.jpg" style= "width:15%;"></div>
+            <p>Since this week represented the end of the first half of Genius Hour, I made sure to use this time to think about what my end goal truly is. If I were to be honest, Macramé is a lot harder than I thought it would be, and I do not believe I made as many creations as I was hoping to make. However, my final goal was set to making two wall hangings and a lot of coasters. Aditionally, I added a lot to the layout and desiging of the website by making sure that the website was as responsive as possible on all devices. I coded the website to include a warning message that recommends switching devices if you are on a device that is not a desktop or a laptop so that everyone can ge tthe best website experience.</p>
+          </div>
+          <div class="card">
+            <h2> Week 4</h2>
+            <h5>September 27th, 2023</h5>
+            <div class="fakeimg" style="height:200px;"><img src="DNA Macrame Style.png" style = "width:35%;" alt=""></div>
+            <br>
+            <p>After quite a lot of hard work, I finalized another project for my Macramé Genius Hour. I decided to make a more intricate wall hanging and include other patterns, like diamond stitches and Macramé patterns that look like DNA. I also decided to focus on the videos of this website and made a lot of progress showcasing my process. Overall, I would say that this week was one of the most productive ones. </p>
+          </div>
+          <div class="card">
+            <h2> Week 5</h2>
+            <h5>October 4th</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>In this whole week, I spent most of my time connecting the website to GitHub and connecting to Google Domains/Squarspace Domains. Even though I made this website from scratch, I needed a custom domain, and I decided to go with magnificentmacrame.com, because it matches the theme of the entrie website. I also created a couple of other creations and finalized the video section of the whole website.</p>
+          </div>
+          <div class="card">
+            <h2> Week 6</h2>
+            <h5>October 4th</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2 style = "margin-left: 18%;">About Me</h2>
+            <div class="Personal-Logo.gif" style="height:100px;"><img src="Personal-Logo.gif" alt="" style = "margin-left: 30%;"></div>
+            <br>
+            <p>Hello everyone! I am Suhani, I'm in eighth grade, and I am 13 years old. I would describe myself as someone who is quiet, reflective, ambitious, and secretly sensitive. I love math, science, and art, and my favorite things to do in my free time are calligraphy, singing, and my most recently developed hobby of Macramé.</p>
+          </div>
+          <div class="card">
+            <h3>Best Creations</h3>
+            <img src="Best-Wall-Hanging.png" class="fakeimg" style = "width:90%;"></img>
+            <img src="Rectangular Coaster.jpg" class="fakeimg" style = "width:90%;"></img>
+            <img src="Multicolor Spiral Coaster.jpg" class="fakeimg" style = "width:90%;"></img>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <p>Some text..</p>
+          </div>
+        </div>
+      </div>
+
+      </body>
+      </html>
+      
